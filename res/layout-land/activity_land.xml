@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<EditText
+    android:id="@+id/text"
+    android:layout_width="180dp"
+    android:layout_height="50dp"
+    android:layout_x="60dp"
+    android:layout_y="10dp"
+    android:ems="10"
+    android:inputType="text"
+    android:textSize="18sp" >
+
+    <requestFocus />
+</EditText>
+
+<Button
+    android:id="@+id/open"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:layout_x="260dp"
+    android:layout_y="10dp"
+    android:text="Open" />
+
+<ImageView
+    android:id="@+id/image"
+    android:layout_width="320dp"
+    android:layout_height="180dp"
+    android:layout_x="60dp"
+    android:layout_y="80dp" />
+
+</AbsoluteLayout>

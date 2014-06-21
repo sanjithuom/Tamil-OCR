@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Gallery"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
+
+                    <Button
+                        android:id="@+id/open"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:text="Open" />
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/open"
+                        android:layout_marginTop="10dp" 
+                        android:layout_above="@+id/rotateC"
+                        android:layout_marginBottom="10dp"  />
+                    
+                    <EditText
+                        android:id="@+id/text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/open"
+                        android:layout_marginTop="10dp"
+                        android:layout_above="@+id/copy"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="15dp"
+                        android:background="@android:drawable/editbox_background"
+                        android:scrollbars="vertical" />
+
+                    <ImageButton
+                        android:id="@+id/rotateC"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/convert"
+                        android:layout_above="@+id/convert"
+                        android:layout_marginBottom="10dp"                      
+                        android:src="@drawable/rotate" />
+
+                    <Button
+                        android:id="@+id/convert"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:text="Convert" />
+
+                    <ImageButton
+                        android:id="@+id/rotateA"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/convert"
+                        android:layout_marginBottom="10dp" 
+                        android:layout_alignLeft="@+id/convert"
+                        android:src="@drawable/rotate_anti" />
+
+                    <Button
+                        android:id="@+id/copy"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="20dp"
+                        android:text="Copy" />
+
+</RelativeLayout>
